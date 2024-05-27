@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Priscilia's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">P<span class="highlight">Essel</span></a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+    
+    <div class="social-media-nav">
+      <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+        <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+        <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+      </a>
+    </div>
+  </header>
+  <div class="content-wrapper">
+    <div class="text-section">
+      <h1>Welcome to my digital portfolio!</h1>
+      <p1>Hello, I'm Priscilia, a proud graduate of De Montfort University with a degree in Computer Science. My academic journey has equipped me with a solid foundation, and I am passionate about where this will lead me. Again, welcome to my digital portfolio, where I showcase my projects and share insights into my professional adventures.</p1>
+    </div>
+    <div class="image-section">
+      <img src="Images & Documents used/img 1.jpg" alt="Neutral face image of me ">
+      <img src="Images & Documents used/img 2.jpg" alt="Tilted head image of me">
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="social-media-nav">
+      <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+        <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+        <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+      </a>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const currentPage = window.location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('.navbar a');
+
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

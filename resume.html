@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>About Priscilia</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+  
+
+</head>
+<body>
+    <header class="header">
+      <a href="#" class="logo">P<span class="highlight">Essel</span></a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="resume.html" class="active">Resume</a>
+        </nav>
+        <div class="social-media-nav">
+          <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+            <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+          </a>
+          <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+            <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+          </a>
+        </div>
+    </header>
+    <div class="content-wrapper">
+    <main class="resume-container">
+      <h1>My Resume</h1>
+      <a href="Images & Documents used/PriscilliaEssel_gradCV.pdf" target="_blank">PDF of resume</a>
+    
+      <section class="resume-section">
+        <header class="section-header">
+          <h2>Education</h2>
+          <i class='bx bx-chevron-down'></i>
+        </header>
+        <div class="section-content">
+          <div class="education-info">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>De Montfort University</p>
+            <p>2024</p>
+          </div>
+          <div class="education-info">
+            <h3>A-Levels: ICT</h3>
+            <p>Joseph Chamberlain Sixth Form College</p>
+            <p>D* D* D</p>
+            <p>2020</p>
+          </div>
+          <div class="education-info">
+            <h3>GCSEs</h3>
+            <p>Harborne Academy</p>
+            <p>Grades 5s & 6s including English, Mathematics, Science, and Sport</p>
+            <p>2018</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+          <i class='bx bx-chevron-down'></i>
+        </header>
+        <div class="section-content">
+          <div class="project-info">
+            <h3>Development Project Overview</h3>
+            <p>I developed a Health Track app aimed at providing users with a user-friendly interface for tracking their health and fitness data. The application was designed to offer valuable insights and recommendations to encourage a healthier lifestyle. The project was crafted to meet the needs of individuals seeking a convenient and comprehensive solution for monitoring and enhancing their well-being. To accomplish this goal, I utilised Android Studio and Firebase for development.</p>
+          </div>
+          <div class="project-info">
+            <h3>Mobile Application Project Overview</h3>
+            <p>For this project, I collaborated with a partner to develop a mobile app aimed at streamlining coffee ordering and improving the overall coffee shop experience. Our goal was to enable customers to effortlessly browse the menu, customise their coffee selections, and place orders using their smart devices. Android Studio and Firebase database were utilised throughout the project to implement the necessary functionalities.</p>
+          </div>
+          <div class="project-info">
+            <h3>Agile Development</h3>
+            <p>For this project, I utilised Visual Studio to develop a customer management system, enabling customers to seamlessly add, edit, and delete data through the front end of the system. I employed Git to ensure consistent maintenance of the codebase throughout the development process.</p>
+          </div>
+        </div>
+      </section>      
+
+      <section class="resume-section">
+        <header class="section-header">
+          <h2>Leadership and Extracurricular Activities</h2>
+          <i class='bx bx-chevron-down'></i>
+        </header>
+        <div class="section-content">
+          <div class="leadership-info">
+            <ul>
+              <li>
+                <strong>Secretary, University Society</strong> (2022-2023)
+                <ul>
+                  <li>Managed communications, organised meetings, documented proceedings, and liaised with the coordinator.</li>
+                  <li>Developed leadership skills in effective communication, time management, and proficient writing.</li>
+                  <li>Demonstrated adaptability and collaboration while balancing academic commitments with society duties.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Prefect, Secondary School</strong> (2017-2018)
+                <ul>
+                  <li>Appointed as a prefect due to trustworthy and commendable qualities as a student.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    </div>
+    
+      <footer class="site-footer">
+        <div class="social-media-nav">
+          <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+            <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+          </a>
+          <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+            <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+          </a>
+        </div>
+      </footer>
+      <script src="js/scripts.js"></script>
+      <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+  const currentPage = window.location.pathname.split('/').pop();
+  const navLinks = document.querySelectorAll('.navbar a');
+  
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+  
+  const toggleIcons = document.querySelectorAll('.bx-chevron-down');
+  const sectionContents = document.querySelectorAll('.section-content');
+  
+  toggleIcons.forEach((toggleIcon, index) => {
+    toggleIcon.addEventListener('click', function() {
+      const isExpanded = sectionContents[index].classList.toggle('show-content');
+      toggleIcon.setAttribute('aria-expanded', isExpanded);
+    });
+  });
+});
+</script>
+</body>
+</html>
+
+

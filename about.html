@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Priscillia</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <a href="index.html" class="logo">P<span class="highlight">Essel</span></a>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+  <div class="social-media-nav">
+    <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+      <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+      <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+    </a>
+  </div>
+</header>
+
+<div class="content-wrapper">
+  <div class="about-section">
+    <div class="image-content">
+      <div class="slideshow">
+        <img src="Images & Documents used/img 3.jpg" alt="Image of me standing" class="slideshow-image">
+        <img src="Images & Documents used/img 4.jpg" alt="Image of secondary school" class="slideshow-image">
+        <img src="Images & Documents used/img 5.jpg" alt="Images of related books" class="slideshow-image">
+        <img src="Images & Documents used/img 6.jpg" alt="Image of Pensa uni society" class="slideshow-image">
+      </div>
+    </div>
+    <div class="text-content">
+      <h2>My Journey</h2>
+      <p2>From a young age, I've been captivated by the world of Information Technology. This fascination was not fleeting; it followed me through secondary school, where I first dipped my toes into the vast ocean of IT. Eager to dive deeper, I chose to pursue an ICT Extended Diploma in sixth form, a decision that solidified my commitment to this ever-evolving field. The journey didn't stop there; it only grew more focused. I enrolled in a computer science programme at university, driven by a desire to understand the core principles that underpin modern technology.</p2>
+      <p3>Throughout my academic journey, one area stood out to me the most: web development. It's the canvas where I can blend creativity with logic, building user-centric digital experiences from the ground up. Today, as an undergraduate computer science student, my dedication to this craft has never been stronger. I am motivated by the endless possibilities of front-end development, striving not just to excel, but to innovate. My goal is to transform complex problems into intuitive, accessible, and beautiful web solutions, paving the way for a future where technology enhances every aspect of our lives.</p3>
+    </div>
+      <div class="text-content2">
+      <h3>My Skills and Expertise</h3>
+      <p4>I specialise in crafting user-centric digital experiences, combining a solid foundation in HTML, CSS, JavaScript, and React with a creative approach to solve complex problems. My technical proficiency extends across a broad spectrum of programming languages, development tools, and operating systems.</p4>
+      <ul class="skills-list">
+        <li><strong>Programming Languages:</strong> Scala, Java</li>
+        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React, PHP</li>
+        <li><strong>Database Management:</strong> SQL, MongoDB</li>
+        <li><strong>Development Tools:</strong> Git, Visual Studio Code, Kaggle Notebook</li>
+        <li><strong>Operating Systems:</strong> Proficient in both Windows and Linux environments</li>
+      </ul>
+      <h4>Personal Interests and Hobbies</h4>
+      <p5>Outside of coding, I recharge by embracing the outdoors and maintaining a regular gym routine. The discipline and persistence I apply to my fitness goals mirror my approach to web development—constantly pushing limits and striving for excellence. Nature's complexity and beauty inspire creativity in my projects, encouraging innovative solutions. This blend of physical activity and outdoor adventures not only keeps me energised but also fuels my passion.</p5>
+  </div>
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="social-media-nav">
+    <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+      <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+      <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+    </a>
+  </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slideshow-image");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.opacity = "0";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.opacity = "1";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+</script>
+</body>
+</html>

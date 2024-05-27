@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Contact Priscillia</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">P<span class="highlight">Essel</span></a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+    <div class="social-media-nav">
+      <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+        <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+        <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+      </a>
+    </div>
+  </header>
+  
+  <main class="contact-container">
+    <section class="contact-info">
+      <h5>Let's Connect!</h5>
+      <p class ="contact description">I'm always open to discussing new opportunities, creative ideas, or potential collaborations. If you're interested in my work and think we could create something amazing together, or if you just want to say hi, don't hesitate to get in touch. I'd love to hear from you!</p>
+    </section>
+    <form class="contact-form" action="https://formspree.io/f/xqkrwwvb" method="POST">
+      <input type="text" name="name" placeholder="Name" autocomplete="off" required>
+      <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+      <input type="text" name="phone" placeholder="Phone" autocomplete="off" required>
+      <textarea name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+      <fieldset>
+        <legend>Which are you? (required)</legend>
+        <label><input type="radio" name="user_type" value="student" id="student">Student</label>
+        <label><input type="radio" name="user_type" value="recruiter" id="recruiter">Recruiter</label>
+        <label><input type="radio" name="user_type" value="other" id="other">Other</label>
+      </fieldset>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="social-media-nav">
+      <a href="mailto:Priscilliaansmai@gmail.com" target="_blank">
+        <i class='bx bxs-envelope' style='color:#40e0d0'></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/priscillia-essel-97456a277/" target="_blank">
+        <i class='bx bxl-linkedin-square' style='color:#40e0d0'></i> LinkedIn
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const currentPage = window.location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('.navbar a');
+      
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+      document.querySelectorAll('h5').forEach(element => {
+    element.innerHTML = element.textContent.replace(/\S/g, "<span>$&</span>");
+  });
+      
+      });
+
+  </script>
+</body>
+</html>
+
